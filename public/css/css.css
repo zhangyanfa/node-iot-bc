@@ -1,0 +1,1671 @@
+.tabHeaderElement {
+    width: 100%;
+    list-style: none;
+    padding-bottom: 0px;
+}
+
+.tabHeaderElement li {
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.tabHeaderElement li:before {
+    display: none;
+}
+
+.tabHeaderElement li button {
+    font-family: "HelvRegularIBM", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    padding: 10px 15px;
+    width: 100%;
+    height: 65px;
+    background: #F0F0F0;
+    border: none;
+}
+
+.tabHeaderElement li.active button {
+    color: #4A90E2;
+}
+
+#transactionsContainer .tabHeaderElement li button,
+#transactionsContainer .tabHeaderElement li button:active {
+    background-color: #fff;
+}
+
+.tabContentElement {
+    display: none;
+    padding: 30px 35px;
+    min-height: 50px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.tabContentElement.active {
+    display: block;
+}
+
+.dataTable {
+    display: table;
+    width: 100%;
+}
+
+.dataTable .norecordmessage {
+    position: absolute;
+    margin: 25px;
+    margin-left: 70px;
+    line-height: 16px;
+}
+
+.dataTable .norecordmessage:before {
+    position: absolute;
+    left: -50px;
+    top: -10px;
+}
+
+.dataTable .contentDataTable {
+    display: table-row-group;
+}
+
+.dataTable .headerDataTable {
+    display: table-header-group;
+}
+
+.dataTable .headerDataTable li {
+    font-weight: bold;
+    border-bottom: 1px solid #FFF;
+}
+
+.dataTable ul {
+    display: table-row;
+    list-style: none;
+}
+
+.dataTable ul li {
+    display: table-cell;
+    padding: 4px 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+.dataTable ul li::before {
+    display: none;
+}
+
+.dataTable .numericCol {
+    text-align: center;
+    padding-right: 30px;
+}
+
+.satisfied {
+    color: #59A700 !important;
+}
+
+.inspection.required {
+    color: #FF5060 !important;
+}
+
+.collapsePanel {
+    position: absolute;
+    width: 1400px;
+    bottom: -1px;
+    z-index: 100;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.collapsePanel .collapseHeader {
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+    background: #5596E6;
+    text-align: left;
+    font-family: "HelvRegularIBM", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.collapsePanel .collapseHeader .collapseButton {
+    background: none;
+    border: none;
+    width: calc(100% - 75px);
+    padding: 15px 40px;
+    padding-left: 76px;
+    text-align: left;
+}
+
+.collapsePanel .collapseHeader .collapseButton span {
+    font-family: "HelvRegularIBM", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.collapsePanel .collapseHeader.active .collapseButton:before {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.collapsePanel .expandPanel {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+.collapsePanel .panel {
+    width: 100%;
+    padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #FFF;
+    border-top: 1px solid #AEAEAE;
+    color: #FFF;
+}
+
+.collapsePanel .panel.inactive {
+    max-height: 0px;
+    transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -webkit-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -moz-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -ms-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -o-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+}
+
+.collapsePanel .panel.active.normalHeight {
+    max-height: 159px;
+    transition: max-height 400ms ease-in;
+    -webkit-transition: max-height 400ms ease-in;
+    -moz-transition: max-height 400ms ease-in;
+    -ms-transition: max-height 400ms ease-in;
+    -o-transition: max-height 400ms ease-in;
+}
+
+.collapsePanel .panel.maximized {
+    max-height: 601px;
+    height: 601px;
+    transition: max-height 400ms ease-in;
+    -webkit-transition: max-height 400ms ease-in;
+    -moz-transition: max-height 400ms ease-in;
+    -ms-transition: max-height 400ms ease-in;
+    -o-transition: max-height 400ms ease-in;
+}
+
+.collapsePanel .panel.active.normalHeight {
+    max-height: 159px;
+    transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -webkit-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -moz-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -ms-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+    -o-transition: max-height 400ms cubic-bezier(0, .6, .6, 1);
+}
+
+.collapse-enter {
+    opacity: 0.01;
+    transition: opacity .5s ease-in;
+}
+
+.collapse-enter.collapse-enter-active {
+    opacity: 1;
+}
+
+.collapse-leave {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.collapse-leave.collapse-leave-active {
+    opacity: 0.01;
+}
+
+.collapsePanel button span {
+    color: #FFF !important;
+}
+
+.collapsePanel button span.newTransaction:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    background: #FF7832;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 1240px) and (max-width: 1479px) {
+    .collapsePanel {
+        width: calc(100% + 331px);
+    }
+}
+
+@media only screen and (max-width: 1239px) {
+    .collapsePanel {
+        width: calc(100% + 302px);
+    }
+}
+
+.collapsePanel .panel.active.normalHeight #history-container .tabContentElement {
+    height: 157px;
+}
+
+#history-container {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#history-container .tabHeaderElement {
+    display: inline-block;
+    width: 150px;
+    height: 600px;
+    background: #F0F0F0;
+}
+
+#playDemoContainer #history-container .tabHeaderElement li {
+    width: 100%;
+    height: 65px;
+}
+
+#playDemoContainer #history-container .tabHeaderElement li.active {
+    text-align: center;
+}
+
+#playDemoContainer #history-container .tabHeaderElement li.active button {
+    color: #4A90E2;
+    border-bottom: 3px solid;
+    width: auto;
+    height: 40px;
+    padding: 0px;
+    margin-top: 14px;
+}
+
+#history-container .tabContentElement {
+    position: absolute;
+    padding: 10px 0px;
+    top: 0px;
+    left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#history-container .tabContentElement.active {
+    display: table-cell;
+}
+
+#history-container .dataTable li {
+    color: #000;
+}
+
+
+/* Responsive table to use for demo section
+@media only screen and (max-width: 999px){
+  .dataTable .headerDataTable{
+    display: none;
+  }
+  .dataTable .contentDataTable ul{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #FFF;
+  }
+  .dataTable .contentDataTable ul:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+  .dataTable .contentDataTable ul li{
+    display: block;
+    color: #f8f8f8;
+    font-size: 16px;
+  }
+  .dataTable .contentDataTable ul li:before{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    left: 0px;
+    padding-right: 30px;
+    text-align: right;
+    box-sizing: border-box;
+    color: #f8f8f8;
+  }
+  .dataTable .contentDataTable ul li:nth-child(1):before{
+    content: 'Asset ID'
+  }
+  .dataTable .contentDataTable ul li:nth-child(2):before{
+    content: 'Time'
+  }
+  .dataTable .contentDataTable ul li:nth-child(3):before{
+    content: 'Location'
+  }
+  .dataTable .contentDataTable ul li:nth-child(4):before{
+    content: 'Duration'
+  }
+  .dataTable .contentDataTable ul li:nth-child(5):before{
+    content: 'Carrier'
+  }
+  .dataTable .contentDataTable ul li:nth-child(6):before{
+    content: 'Temperature'
+  }
+  .dataTable .contentDataTable ul li:nth-of-type(7 ):before{
+    content: 'Contract Status'
+  }
+}
+*/
+
+.tooltip {
+    padding: 10px;
+}
+
+.tooltip span {
+    font-size: 14px;
+}
+
+.tooltip p {
+    padding: 0px;
+}
+
+.iconList {
+    display: table;
+    margin: auto;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.iconList li {
+    display: table-cell;
+    list-style: none;
+    text-align: center;
+}
+
+.iconList li:before {
+    display: none;
+}
+
+#businessContract .contractTerms {
+    padding: 40px 50px;
+}
+
+#businessContract .contractTerms h4 {
+    padding-top: 0px;
+}
+
+#businessContract .contractTerms h4,
+#businessContract .contractTerms p {
+    color: #222222;
+    line-height: 22px;
+}
+
+#businessContract .contractTerms .buttonDiv {
+    text-align: right;
+    margin-top: 5px;
+}
+
+#businessContract .contractTerms .okButton {
+    background: #fff;
+    border-color: #4178be;
+    color: #4178be;
+    margin-left: 15px;
+}
+
+#businessContract .contractTerms .okButton:hover {
+    background: #4178be;
+    border-color: #4178be;
+    color: #fff;
+}
+
+#businessContract.positionClass {
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+}
+
+#businessContract li:before {
+    color: #20343D;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1239px) {
+    #businessContract .contractTerms {
+        padding: 30px;
+    }
+    #businessContract .contractTerms h4 {
+        line-height: 5px;
+        padding-top: 10px;
+    }
+}
+
+.temperature-container {
+    display: inline-block;
+    margin-top: -35px;
+    width: 100%;
+}
+
+.temperature {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.temperature p {
+    float: left;
+}
+
+.temperature button {
+    margin-right: 15px;
+}
+
+.temperature .alert {
+    color: #FF5050 !important;
+    display: inline-block;
+    width: 45px;
+}
+
+.temperature .alert-message {
+    width: 100%;
+    line-height: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+.temperature .alert-message span {
+    color: #FF5050 !important;
+    vertical-align: top;
+    line-height: 20px;
+    position: relative;
+}
+
+.current-package {
+    padding-bottom: 5px;
+}
+
+.temperature.warningMessage {
+    position: absolute;
+}
+
+.temperature .alert-message .ibm-alert-link:before {
+    vertical-align: middle;
+    top: -1px;
+    position: absolute;
+    left: -30px;
+}
+
+.temperature .alert-message-icon {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 14px;
+    height: 24px;
+    padding-left: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.temperature .ok {
+    color: #8CD211 !important;
+    display: inline-block;
+    width: 48px;
+}
+
+@media only screen and (max-width: 1239px) {
+    .temperature span,
+    .temperature p {
+        font-size: 15px;
+    }
+}
+
+#restart-confirmation-dialog {
+    position: absolute;
+    width: 100%;
+    top: 170px;
+    z-index: 100;
+}
+
+#restart-confirmation-dialog div.resetDialog {
+    position: relative;
+    max-width: 400px;
+    background-color: #FFF;
+    padding: 30px;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.31);
+}
+
+#restart-confirmation-dialog div.resetDialog p {
+    color: #222222;
+    font-family: "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#restart-confirmation-dialog div.resetDialog p:before {
+    color: #FF5050;
+    position: absolute !important;
+    left: 30px;
+    top: inherit;
+}
+
+#restart-confirmation-dialog div.resetDialog button {
+    margin: 0px;
+    margin-left: 20px;
+}
+
+#restart-confirmation-dialog div.resetDialog .resetDialogBtn {
+    text-align: right;
+}
+
+.shippingContainer {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.shipping-trade-lane {
+    position: relative;
+    height: 180px;
+}
+
+.shippingContainer .hidden {
+    display: none !important;
+}
+
+.tradeLane {
+    margin: 130px 0px;
+}
+
+.tradeLane .groupIcon button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    margin-left: calc(50% - 15px);
+    left: 0px;
+    top: 7px;
+    z-index: 1;
+    cursor: default !important;
+}
+
+@-moz-document url-prefix() {
+    .tradeLane .groupIcon button {
+        top: 8px;
+        left: -2px;
+    }
+}
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        .tradeLane .groupIcon button {
+            top: 6px;
+        }
+    }
+}
+
+.tradeLane .groupIcon button:disabled {
+    cursor: default;
+}
+
+.tradeLane .groupIcon .pin1 button {
+    margin-left: auto;
+    left: -20px;
+}
+
+.tradeLane .groupIcon .pin3 button {
+    margin-left: auto;
+    right: -19px;
+    left: auto;
+}
+
+.tradeLane .groupIcon .pins .pinTitle {
+    display: inline-block;
+    position: absolute;
+    color: #FFF;
+    bottom: -30px;
+    left: -28px;
+    font-size: 15px;
+}
+
+.tradeLane .groupIcon .pins.pin2 .pinTitle {
+    left: calc(50% - 20px);
+}
+
+.tradeLane .groupIcon .pins.pin3 .pinTitle {
+    left: calc(100% - 50px);
+    width: 110px;
+}
+
+.tradeLane .groupIcon button img {
+    height: 37px;
+    width: 27px;
+}
+
+.tradeLane .groupIcon {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 40px;
+    border-bottom: 2px solid #FFF;
+    overflow: visible;
+}
+
+.tradeLane .groupBox {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.tradeLane .groupBox .actionButton,
+.tradeLane .groupBox .actionButton:before {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-transition: border .3s, color .3s, background-color .3s;
+    -moz-transition: border .3s, color .3s, background-color .3s;
+    -o-transition: border .3s, color .3s, background-color .3s;
+    -ms-transition: border .3s, color .3s, background-color .3s;
+    transition: border .3s, color .3s, background-color .3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tradeLane .groupBox .actionButton {
+    position: absolute;
+    ;
+    display: block;
+    background: #5596E6;
+    color: #FFF;
+    font-size: 12px;
+    margin-top: 25px;
+    left: -40px;
+    padding: 15px;
+    border: none;
+}
+
+.tradeLane .groupBox .actionButton:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    top: -9px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #5596E6;
+}
+
+#playDemoContainer .shippingContainer .actionButton:hover {
+    background: #4178BE;
+    color: #FFF;
+}
+
+#playDemoContainer button:hover:before {
+    border-bottom-color: #4178BE;
+}
+
+#playDemoContainer button.ibm-reset-link {
+    position: absolute;
+    right: 0px;
+    color: #5596E6;
+    background-color: inherit;
+    border: none;
+    font-size: 15px;
+    font-family: "HelvRegularIBM", "Helvetica Neue", Arial, sans-serif;
+    margin-top: -30px;
+}
+
+#playDemoContainer button.ibm-reset-link:before {
+    position: relative;
+    top: 5px;
+}
+
+#playDemoContainer button.ibm-reset-link:hover {
+    text-decoration: underline;
+}
+
+#bcShipment .shippingContainer .typeBtn {
+    font-size: 15px;
+    padding: 0px;
+}
+
+#bcShipment .shippingContainer .malfunctionButton {
+    color: #5596E6;
+    border-color: #5596E6;
+    margin-top: -7px;
+}
+
+#bcShipment .shippingContainer .malfunctionButton:hover {
+    background-color: #5596E6;
+    background: #5596E6;
+    border-color: #5596E6;
+    color: #fff;
+}
+
+#bcShipment .shippingContainer .malfunction-button:before {
+    /*content: "•";*/
+    content: "";
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 0px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    width: 40px;
+    height: 10px;
+    color: #FF5050;
+    padding: 9px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 8px;
+    position: relative;
+    background-color: #ff5050;
+}
+
+.tradeLane .groupBox .actionButton.pin2 {
+    left: calc(50% - 65px);
+}
+
+.tradeLane .groupBox .actionButton.pin2:before {
+    left: 60px;
+}
+
+.tradeLane .groupBox .actionButton.pin2.ended {
+    left: calc(50% - 35px);
+}
+
+.tradeLane .groupBox .actionButton.pin2.ended:before {
+    left: 30px;
+}
+
+.tradeLane .groupBox .actionButton.pin3 {
+    left: auto;
+    right: -40px;
+}
+
+.tradeLane .groupBox .actionButton.pin3:before {
+    left: 92px;
+}
+
+.tradeLane .connectingLine {
+    height: 162px;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.tradeLane .pathContainer .animation2 .connectingLine {
+    margin-top: 1px;
+}
+
+.tradeLane .pathContainer .animation2.graphic-truck-left .connectingLine {
+    height: 175px;
+    margin-left: -1px;
+    margin-top: 1px;
+}
+
+
+/*
+  Icon horizontal animation
+*/
+
+.tradeLane .pathContainer {
+    position: absolute;
+    width: calc(50% - 25px);
+    float: left;
+    margin-left: 17px;
+}
+
+.tradeLane .pathContainer.secondAnimation {
+    margin-left: calc(50% + 30px);
+    width: calc(50% - 27px);
+}
+
+.tradeLane .pathContainer .animatedDiv {
+    width: 75px;
+    height: 40px;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tradeLane .pathContainer .animation1.animatedDiv {
+    width: 90px;
+    height: 56px;
+    top: -16px;
+}
+
+.tradeLane .pathContainer .animation2.animatedDiv .animatedIcon {
+    height: 28px;
+    top: 11px;
+    left: 12px;
+}
+
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.full-ship.completed,
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.full-truck.completed {
+    left: calc(100% - 95px);
+}
+
+.tradeLane .pathContainer .animatedDiv.active {
+    animation-timing-function: linear;
+    animation: slide 13s forwards;
+    -webkit-animation: slide 13s forwards;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: calc(100% - 95px);
+    }
+}
+
+.shippingContainer .demoText {
+    min-height: 140px;
+}
+
+
+/*
+  Line Animation
+*/
+
+.tradeLane .animatedLine {
+    position: absolute;
+    background-color: #FFF;
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+}
+
+.tradeLane .animatedLine span {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    background-color: #FF7832;
+    animation-timing-function: linear;
+}
+
+.tradeLane .animatedLine.animation1Active span {
+    animation: line1 13s forwards;
+    -webkit-animation: line1 13s forwards;
+}
+
+@keyframes line1 {
+    0% {
+        width: 0%;
+    }
+    9% {
+        width: 90px;
+    }
+    83% {
+        width: calc(50% - 50px);
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.tradeLane .animatedLine.animation2Active span {
+    animation: line2 13s forwards;
+    -webkit-animation: line2 13s forwards;
+}
+
+@keyframes line2 {
+    0% {
+        width: 50%;
+    }
+    10% {
+        width: calc(50% + 85px);
+    }
+    80% {
+        width: calc(100% - 50px);
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/*
+  Zoom animation
+*/
+
+#playDemoContainer .tradeLane .divZoom button {
+    position: absolute;
+    bottom: 45px;
+    right: 65px
+}
+
+.tradeLane .divZoom {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.tradeLane .divZoom .zoomImageDiv {
+    position: relative;
+    width: calc(100% - 250px);
+    margin-left: 118px;
+}
+
+.tradeLane .divZoom.zoomIn,
+.tradeLane .divZoom.zoomOut,
+.tradeLane .divZoom.zoomed {
+    display: block;
+    background: rgba(029, 054, 072, 0.7);
+    z-index: 2;
+}
+
+.tradeLane .divZoom.zoomIn .zoomShip {
+    display: inline-block;
+    width: 90px;
+    margin-top: -13px;
+    transition: all 2s linear;
+    animation-timing-function: linear;
+    animation: zoom-in 2s forwards;
+    -webkit-animation: zoom-in 2s forwards;
+}
+
+@keyframes zoom-in {
+    0% {}
+    100% {
+        width: 450px;
+        margin-top: -80px;
+        margin-left: -40px;
+    }
+}
+
+.tradeLane .divZoom.zoomOut .zoomShip {
+    display: inline-block;
+    margin-top: -80px;
+    margin-left: -40px;
+    width: 450px;
+    transition: all 2s linear;
+    animation-timing-function: linear;
+    animation: zoomOut 2s forwards;
+    -webkit-animation: zoomOut 2s forwards;
+}
+
+@keyframes zoomOut {
+    0% {}
+    100% {
+        width: 100px;
+        margin-top: -13px;
+        margin-left: 0px;
+        background: none;
+    }
+}
+
+.tradeLane .divZoom.zoomed .zoomShip {
+    width: 450px;
+    margin-top: -80px;
+    margin-left: -40px;
+}
+
+.tradeLane .divZoom .zoomShipAnimation {
+    display: none;
+    position: absolute;
+    bottom: 215px;
+    height: 65px;
+    left: 66px;
+}
+
+.tradeLane .divZoom.zoomed .zoomShipAnimation {
+    display: block;
+}
+
+.tradeLane .divZoom.zoomed .zoomImageDiv:before {
+    position: absolute;
+    width: 450px;
+    left: -39px;
+    bottom: 0px;
+}
+
+@media only screen and (min-width: 1480px) {
+    #businessContract .contractTerms {
+        min-height: 175px;
+    }
+    #playDemoContainer .tradeLane .divZoom button {
+        right: 93px;
+    }
+}
+
+@media only screen and (min-width: 1240px) and (max-width: 1479px) {
+    .tradeLane .divZoom .zoomImageDiv {
+        margin-left: 91px;
+    }
+    .tradeLane .divZoom.zoomed .zoomShip {
+        width: 450px;
+        margin-top: -60px;
+        margin-left: -60px;
+    }
+    @keyframes zoom-in {
+        0% {}
+        100% {
+            width: 450px;
+            margin-top: -60px;
+            margin-left: -60px;
+        }
+    }
+    .tradeLane .divZoom.zoomOut .zoomShip {
+        width: 450px;
+        margin-top: -60px;
+        margin-left: -60px;
+    }
+    .tradeLane .divZoom.zoomed .zoomImageDiv:before {
+        left: -59px;
+    }
+    .tradeLane .divZoom .zoomShipAnimation {
+        bottom: 213px;
+        height: 65px;
+        left: 45px;
+    }
+    #playDemoContainer .tradeLane .divZoom button {
+        bottom: 45px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1239px) {
+    .tradeLane .divZoom .zoomImageDiv {
+        margin-left: 70px;
+    }
+    @keyframes zoom-in {
+        0% {}
+        100% {
+            width: 300px;
+            margin-top: -20px;
+            margin-left: -60px;
+        }
+    }
+    .tradeLane .divZoom.zoomOut .zoomShip {
+        width: 300px;
+        margin-top: -20px;
+        margin-left: -60px;
+    }
+    .tradeLane .divZoom.zoomed .zoomShip {
+        width: 300px;
+        margin-top: -20px;
+        margin-left: -60px;
+    }
+    .tradeLane .divZoom.zoomed .zoomImageDiv:before {
+        width: 400px;
+        left: -87px;
+        bottom: -38px;
+    }
+    .tradeLane .divZoom .zoomShipAnimation {
+        bottom: 150px;
+        height: 60px;
+        left: 5px;
+    }
+    #playDemoContainer .tradeLane .divZoom button {
+        bottom: 45px;
+        right: 45px;
+    }
+}
+
+
+/*
+@media only screen and (max-width: 999px){
+  .tradeLane .divZoom .zoomImageDiv{
+    margin-left: 73px;
+  }
+  @keyframes zoom-in
+  {
+    0% {
+    }
+    100% {
+      width: 370px;
+      margin-top: -40px;
+      margin-left: -60px;
+    }
+  }
+  .tradeLane .divZoom.zoomOut .zoomShip {
+    width: 370px;
+    margin-top: -40px;
+    margin-left: -60px;
+  }
+  .tradeLane .divZoom.zoomed .zoomShip {
+    width: 370px;
+    margin-top: -40px;
+    margin-left: -60px;
+  }
+  .tradeLane .divZoom .zoomShipAnimation{
+    bottom: 177px;
+    height: 53px;
+    left: 26px;
+  }
+  #playDemoContainer .tradeLane .divZoom button{
+    bottom: 50px;
+  }
+}
+*/
+
+.transferedMessage {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 120px);
+    background: #FFF;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.transferedMessage.active {
+    animation: fadeInTransfer 3s forwards;
+    animation-timing-function: linear;
+    -webkit-animation: fadeInTransfer 3s forwards;
+}
+
+.transferedMessage span {
+    font-size: 15px;
+    color: #59A700;
+    padding-left: 25px;
+}
+
+.transferedMessage span:before {
+    position: absolute;
+    color: #59A700;
+    top: 11px;
+    left: 14px;
+    font-size: 26px;
+}
+
+@keyframes fadeInTransfer {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        bottom: 85px;
+    }
+    70% {
+        opacity: 1;
+        bottom: 85px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.tabletView .tradeLane .groupIcon .pin2 button {
+    margin-left: calc(50% - 23px);
+}
+
+.tabletView .tradeLane .groupIcon .pin3 button {
+    right: -24px;
+}
+
+.blockContainer {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.blockBox {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 20px;
+    width: calc(25% - 35px);
+}
+
+.blockBox:first-child {
+    margin-left: 0px;
+}
+
+.blockBox:last-child {
+    margin-right: 0px;
+}
+
+.blockBoxContent {
+    border: 1px solid #959595;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.blockBoxContent .norecordmessage {
+    padding: 30px;
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blockBoxContent .norecordmessage:before {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+.blockBoxContentLine {
+    overflow-x: hidden;
+    padding: 10px 20px 10px 30px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.blockBoxContentLine:hover {
+    cursor: pointer;
+}
+
+.blockBoxContentLine h5 {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.blockBoxContentLine h5:after {
+    content: "\F116";
+    display: inline-block;
+    font-family: "icons-ibm-v4";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    right: 1px;
+    position: absolute;
+    text-decoration: none;
+    speak: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    color: gray;
+}
+
+.blockBoxContentLine h5.expandedBlock:after {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.blockBoxContentLine h5 span.timestamp {
+    margin-left: 10px;
+}
+
+
+/*.blockBoxContentLine h5:before{
+  position: absolute;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+  left: -14px;
+  top: 8px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #000;
+}*/
+
+.blockBoxContentLine h5 span {
+    font-family: "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
+}
+
+.blockBoxContentLine p {
+    padding-bottom: 2px;
+    word-break: break-all;
+}
+
+.blockBoxContentLine .hidden {
+    display: none;
+}
+
+.blockTransactions .active {
+    display: block;
+}
+
+.highlightBlock {
+    background-color: #ECF7FF;
+}
+
+.highlightNewBlock {
+    border-color: #FF7832;
+    background-color: #FEF3EE;
+    animation: fadeInBlock 1s forwards;
+    animation-timing-function: linear;
+    -webkit-animation: fadeInBlock 1s forwards;
+}
+
+@keyframes fadeInBlock {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    #transactionsContainer {
+        top: 0px;
+        margin: 0px;
+        position: absolute;
+    }
+}
+
+#transactionsContainer {
+    width: 100%;
+    height: calc(100% - 1px);
+    background: #FFF;
+    overflow: hidden;
+}
+
+#transactionsContainer .tabHeaderElement li {
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px solid #D9D9D9;
+    vertical-align: top;
+}
+
+#transactionsContainer .tabHeaderElement li.active button {
+    display: block;
+    border-bottom: 3px solid;
+    width: auto;
+    margin: auto;
+}
+
+#transactionsContainer .tabHeaderElement li button {
+    height: 40px;
+    padding: 12px 0px;
+    font-size: 15px;
+}
+
+#transactionsContainer .tabContentElement {
+    padding: 0px;
+    height: calc(100% - 65px);
+    overflow: hidden;
+}
+
+#transactionsContainer .blockBox {
+    margin: 0px;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+}
+
+#transactionsContainer .blockBox p,
+#transactionsContainer .blockBox span,
+#transactionsContainer .blockBox h5 {
+    font-size: 12px;
+    color: #000;
+}
+
+#transactionsContainer .blockBox .blockBoxContent {
+    border: none;
+    height: calc(100% - 50px);
+}
+
+#transactionsContainer .blockBox h3 {
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #CECECE;
+}
+
+#transactionsContainer .tooltipAnchor {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#playDemoContainer .tabHeaderElement li {
+    width: 50%;
+}
+
+#playDemoContainer button {
+    cursor: pointer;
+    outline: none;
+}
+
+#bcShipment {
+    padding: 45px 0;
+    height: 560px;
+}
+
+#bcShipment h4 {
+    padding-top: 30px;
+}
+
+#bcShipment h4,
+#bcShipment p,
+#bcShipment p span {
+    color: #F8F8F8;
+}
+
+#playDemoContainer .fullDemoSection {
+    height: 650px;
+}
+
+#playDemoContainer .fullDemoSection.initialDemo .demoBox .collapsePanel {
+    display: none;
+}
+
+#playDemoContainer .demoBox {
+    position: relative;
+    width: calc(100% - 330px);
+}
+
+#playDemoContainer .fullDemoSection.initialDemo .demoSidepanel {
+    display: none;
+}
+
+#playDemoContainer .fullDemoSection.initialDemo .demoviewWrapper.demoBox {
+    width: 100%;
+}
+
+#playDemoContainer .fullDemoSection.initialDemo .demoviewWrapper.demoBox #bcShipment .shippingContainer>div:last-child {
+    max-width: 880px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+#playDemoContainer .fullDemoSection.initialDemo .demoviewWrapper.demoBox #bcShipment .shippingContainer #restart-confirmation-dialog {
+    top: 0px;
+}
+
+@media only screen and (min-width: 580px) and (max-width: 759px) {
+    .ibm-col-6-2 {
+        width: 100%;
+    }
+    .ibm-col-6-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    #playDemoContainer .ibm-columns {
+        display: table;
+        margin: 0px;
+        width: 100% !important;
+    }
+    #playDemoContainer .ibm-col-6-4 {
+        display: table-cell;
+        float: none;
+        margin-right: 0px;
+        box-sizing: border-box;
+    }
+    #playDemoContainer .ibm-col-6-2 {
+        display: table-cell;
+        float: none;
+        position: relative;
+        background: #E0E0E0;
+        margin-left: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+        display: table-cell;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 1480px) {
+    #playDemoContainer .demoviewWrapper {
+        width: 1185px;
+    }
+    #playDemoContainer .demoSidepanel {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 1479px) and (min-width: 1240px) {
+    #playDemoContainer .demoviewWrapper {
+        width: 850px;
+    }
+    #playDemoContainer .demoSidepanel {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    #playDemoContainer .demoBox {
+        display: block;
+        width: 100%;
+    }
+    #playDemoContainer .blocklist-box {
+        display: none;
+    }
+    #playDemoContainer .fullDemoSection {
+        margin: 0px;
+    }
+}
+
+.rotateDeviceContainer {
+    display: none;
+    position: relative;
+    height: 500px;
+}
+
+.rotateDevice {
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 250px;
+    top: 20%;
+    opacity: .95;
+    padding-top: 30px;
+}
+
+.rotateInfo {
+    position: relative;
+    max-width: 390px;
+    padding-top: 150px;
+    margin: auto;
+    top: -540px;
+    text-align: left;
+}
+
+.rotateInfo p {
+    padding: 0px 20px;
+}
+
+.rotateDevice {
+    position: relative;
+}
+
+.rotateDeviceImg {
+    margin-top: 0px;
+}
+
+.rotateDeviceContent {
+    position: relative;
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    top: -7px;
+}
+
+.rotateInfo p {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px;
+}
+
+.rotateInfo {
+    position: absolute;
+    max-width: 75%;
+    top: 0px;
+    margin: 0px 20%;
+}
+
+
+/*.portraitView .rotateDeviceContainer{
+  display: block;
+}*/
+
+@media only screen and (max-width: 999px) {
+    .rotateDeviceContainer {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 579px) {
+    .rotateDeviceContainer {
+        padding: 20px 0px;
+    }
+    .rotateDeviceImg {
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (max-width: 506px) {
+    .rotateDevice {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 444px) {
+    .rotateDevice {
+        height: 350px;
+    }
+    .rotateDeviceContent {
+        padding: 45px 25px;
+    }
+    .rotateInfo {
+        top: 25px;
+    }
+}
+
+.fade-enter {
+    opacity: 0.01;
+    transition: opacity .35s ease-in;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-leave {
+    opacity: 1;
+    transition: opacity .35s ease-in;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+}

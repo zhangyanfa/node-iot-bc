@@ -1,0 +1,23 @@
+{
+  "name": "node-iot-bc",
+  "version": "1.0.0",
+  "description": "Badminton Challenge",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "async": "^2.4.0",
+    "body-parser": "^1.17.2",
+    "cfenv": "1.0.0",
+    "cloudant": "^1.5.0",
+    "express": "4.13.x",
+    "ibmiotf": "^0.2.18",
+    "is-utf8": "^0.2.1",
+    "node-schedule": "^1.2.1",
+    "request": "^2.75.0",
+    "socket.io": "^1.7.3",
+    "uuid": "^3.0.1"
+  }
+}

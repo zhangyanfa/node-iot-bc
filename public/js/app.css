@@ -1,0 +1,919 @@
+html {
+  background-color: #1D3649 !important;
+}
+body {
+  background: #FFFFFF;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: normal;
+  color: #222222;
+}
+.off {
+  display: none !important;
+}
+.ibm-h2 {
+  line-height: 40px;
+}
+div#ibm-content-wrapper div#ibm-content div#ibm-content-body {
+  padding-top: 0px;
+}
+.paragraphLine {
+  line-height: 24px;
+}
+.ibm-btt-auto a.ibm-top-link {
+  border: none;
+  z-index: 101 !important;
+}
+.ibm-btt-auto a.ibm-top-link:before {
+  margin-left: 6px;
+  margin-top: 14px;
+}
+.ibm-btn-pri.ibm-btn-blue-50 {
+  background: #5596E6 !important;
+  border-color: #5596E6 !important;
+}
+.ibm-btn-pri.ibm-btn-blue-50:hover {
+  background: #4178BE !important;
+  border-color: #4178BE !important;
+  color: #FFFFFF !important;
+}
+.ibm-btn-pri.ibm-btn-blue-50.signupBtn {
+  padding: 11px 40px;
+}
+.ibm-btn-pri.ibm-btn-blue-50.playBtn {
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+.typeBtn {
+  font-family: "HelvRegularIBM", "Helvetica Neue", Arial, sans-serif;
+  color: #5596E6;
+  background: none;
+  border: none;
+}
+.typeBtn:hover {
+  text-decoration: underline;
+}
+#ibm-leadspace-head {
+  background-image: url('../image/img-banner.png');
+  background-repeat: no-repeat;
+  background-size: 1350px;
+  background-position: 70%;
+  background-color: #E0F1F1;
+  border: none;
+}
+@media only screen and (max-width: 1479px) and (min-width: 1240px) {
+  #ibm-leadspace-head {
+    background-size: 1470px;
+  }
+}
+@media only screen and (max-width: 1239px) and (min-width: 1000px) {
+  #ibm-leadspace-head {
+    background-size: 1560px;
+    background-position: 80% 0%;
+  }
+}
+@media only screen and (max-width: 999px) and (min-width: 760px) {
+  #ibm-leadspace-head {
+    background-size: 1913px;
+    background-position: 75% 0%;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 580px) {
+  #ibm-leadspace-head {
+    background-size: 2220px;
+    background-position: 76%;
+  }
+}
+@media only screen and (max-width: 579px) and (min-width: 0px) {
+  #ibm-leadspace-head {
+    background-size: 1550px;
+    background-position: 45%;
+  }
+}
+#ibm-leadspace-head #ibm-leadspace-body {
+  padding: 30px 0px 40px;
+}
+#ibm-leadspace-head #ibm-leadspace-body h1 {
+  padding-bottom: 30px;
+}
+#ibm-leadspace-head #ibm-leadspace-body p.ibm-h3 {
+  font-size: 24px;
+}
+#ibm-leadspace-head #ibm-leadspace-body .ibm-col-6-4 {
+  width: 590px;
+}
+#ibm-leadspace-head #ibm-leadspace-body .img-placeholder {
+  padding-left: 170px;
+}
+#ibm-leadspace-head #ibm-leadspace-body .ibm-btn-sec {
+  margin-left: 0px;
+  max-width: inherit;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.mainContent#ibm-content-main {
+  padding-bottom: 0px;
+}
+.mainContent p,
+.mainContent span,
+.mainContent small,
+.mainContent a {
+  font-weight: 500;
+  color: #222222;
+}
+.mainContent p.ibm-forward-link,
+.mainContent span.ibm-forward-link,
+.mainContent small.ibm-forward-link,
+.mainContent a.ibm-forward-link {
+  color: #5AAAFA;
+}
+.mainContent h2.sectionHeader {
+  color: #222222;
+  font-size: 30px;
+}
+.mainContent .btn-default {
+  font-size: 13px;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 19px 45px;
+  border: 2px solid #000000;
+  color: #000000;
+  background: inherit;
+  transition: all 0.2s ease 0s;
+  margin: 10px 0px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  outline: 0;
+}
+.mainContent .btn-default:hover {
+  color: #FFFFFF;
+  background: #000000;
+}
+.mainContent .button-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.mainContent .whiteBackground {
+  background: #FFF;
+}
+.mainContent .blueBackground {
+  background: #1D3649;
+}
+.mainContent .ibm-btt-auto a.ibm-top-link {
+  border: none;
+}
+.mainContent .mainSection {
+  padding: 75px 0px 30px 0px;
+}
+.mainContent .img-placeholder {
+  background: url('../image/placeholder-square.jpg');
+  background-size: 350px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+.mainContent #bc-about .subSection h2,
+.mainContent #bc-info .subSection h2 {
+  padding-bottom: 30px;
+}
+.mainContent #bc-about .subSection .img-placeholder,
+.mainContent #bc-info .subSection .img-placeholder {
+  margin-bottom: 60px;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 {
+  padding-bottom: 30px;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 .whatisImg,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 .whatisImg {
+  background: url('../image/img-what-is.png');
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  max-width: 464px;
+  height: 250px;
+  margin: 20px auto;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3.integrateImgWrapper:last-child,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3.integrateImgWrapper:last-child {
+  display: none;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3.integrateImgWrapper .integrateImg,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3.integrateImgWrapper .integrateImg {
+  background: url('../image/img-integrate.png');
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  max-width: 530px;
+  height: 400px;
+  margin: 20px auto;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 .typeBtn,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 .typeBtn {
+  color: #5596E6;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 p,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 p {
+  padding-right: 20px;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 li,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 li {
+  padding: 5px 0px 5px 20px;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 li:first-child,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 li:first-child {
+  padding-top: 15px;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 li:before,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 li:before {
+  font-size: 12px !important;
+  color: #20343D !important;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 li p,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 li p {
+  line-height: 22px;
+}
+.mainContent #bc-about .subSection.subIot .ibm-col-6-3 li p .typeBtn,
+.mainContent #bc-info .subSection.subIot .ibm-col-6-3 li p .typeBtn {
+  color: #5596E6;
+}
+.mainContent #bc-about .subSection.subBusiness,
+.mainContent #bc-info .subSection.subBusiness {
+  padding: 0px 10px 0px;
+}
+@media only screen and (max-width: 999px) and (min-width: 0px) {
+  .mainContent #bc-about .ibm-col-6-3,
+  .mainContent #bc-info .ibm-col-6-3 {
+    width: 100% !important;
+  }
+  .mainContent #bc-about .ibm-col-6-3 .whatisImg,
+  .mainContent #bc-info .ibm-col-6-3 .whatisImg,
+  .mainContent #bc-about .ibm-col-6-3 .integrateImg,
+  .mainContent #bc-info .ibm-col-6-3 .integrateImg {
+    width: 90%;
+  }
+  .mainContent #bc-about .ibm-col-6-3.integrateImgWrapper:first-child,
+  .mainContent #bc-info .ibm-col-6-3.integrateImgWrapper:first-child {
+    display: none;
+  }
+  .mainContent #bc-about .ibm-col-6-3.integrateImgWrapper:last-child,
+  .mainContent #bc-info .ibm-col-6-3.integrateImgWrapper:last-child {
+    display: block !important;
+  }
+}
+.mainContent .bcBusiness {
+  background-image: url('../image/img-business-image.png');
+  background-repeat: no-repeat;
+  background-size: 1650px;
+  background-position: 74% bottom;
+  background-color: #E0F1F1;
+  border: none;
+  padding-bottom: 80px;
+  padding-right: 20px;
+  margin-bottom: -3px;
+}
+@media only screen and (max-width: 999px) and (min-width: 0px) {
+  .mainContent .bcBusiness {
+    background-size: 200%;
+    background-position: 82% bottom;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 0px) {
+  .mainContent .bcBusiness {
+    height: 450px;
+  }
+}
+.mainContent #useCases h2.sectionHeader {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.mainContent #useCases h2,
+.mainContent #useCases h3,
+.mainContent #useCases p {
+  color: #FFFFFF;
+}
+.mainContent #useCases h3 {
+  font-size: 22px;
+}
+.mainContent #useCases p {
+  font-size: 16px;
+}
+.mainContent #useCases img {
+  width: 61px;
+}
+.mainContent #useCases .usecasesBlocksWrapper {
+  position: relative;
+  margin: 0px -15px;
+}
+@media only screen and (max-width: 999px) and (min-width: 760px) {
+  .mainContent #useCases .usecasesBlocksWrapper .usecaseFullcard {
+    width: 730px;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 580px) {
+  .mainContent #useCases .usecasesBlocksWrapper .usecaseFullcard {
+    width: 550px;
+  }
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card__image.usecaseIcon {
+  width: 65px;
+  margin: 40px auto 20px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card {
+  color: #FFFFFF;
+  background-color: #25425A;
+  border: 1px solid #25425A;
+  padding: 20px 20px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__content {
+  padding: 0px 19px 5px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__content h3 {
+  min-height: 60px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom {
+  padding-bottom: 0px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom .ibm-ind-link {
+  text-align: center;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom .ibm-ind-link .ibm-btn-blue-50 {
+  border-color: #56A8FD;
+  color: #56A8FD;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom .ibm-ind-link .ibm-btn-blue-50:hover {
+  background-color: #56A8FD;
+  color: #FFFFFF;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom .ibm-ind-link .ibm-forward-link {
+  margin-left: -5px;
+  background: none;
+  border: none;
+  color: #5596E6;
+  font-size: inherit;
+  cursor: pointer;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom .ibm-ind-link .ibm-forward-link:before {
+  position: relative;
+  padding-right: 10px;
+  top: 5px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .ibm-card .ibm-card__bottom .ibm-ind-link .ibm-forward-link:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1239px) and (min-width: 1000px) {
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card {
+    padding: 20px 20px;
+  }
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+  position: absolute;
+  background-color: #25425A;
+  margin-left: 20px;
+  width: 1170px;
+  height: 448px;
+  z-index: 1;
+  top: 80px;
+  left: 10px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent button.ibm-close-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #E3E3E3;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+  line-height: 0px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card__image.usecaseIcon {
+  padding-left: 15px;
+  margin: 40px 0px 20px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+  width: 280px;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+  padding-top: 120px;
+  width: 600px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card {
+  margin-top: 60px;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card h3 {
+  text-align: left;
+}
+.mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card .ibm-card__content {
+  width: 280px;
+}
+@media only screen and (min-width: 1480px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+    margin-left: 21px;
+    width: 1409px;
+    height: 449px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+    margin-left: 130px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+    width: 750px;
+  }
+}
+@media only screen and (max-width: 1239px) and (min-width: 1000px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+    margin-left: 2px;
+    width: 966px;
+    height: 481px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card__image.usecaseIcon {
+    margin: 40px 15px 20px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+    width: 540px;
+  }
+}
+@media only screen and (max-width: 999px) and (min-width: 0px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 500;
+    overflow-y: scroll !important;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent button.ibm-close-link {
+    top: 70px;
+    right: 30px;
+    position: fixed;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent button.ibm-close-link:before {
+    font-size: 3em;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card__content h3 {
+    margin-bottom: -60px;
+    font-size: 1.8em;
+    line-height: 1.3em;
+    padding-bottom: 60px !important;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent p {
+    padding: 0 135px 20px;
+    font-size: 1.28em;
+    line-height: 1.50em;
+  }
+}
+@media only screen and (max-width: 999px) and (min-width: 760px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+    width: 480px;
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 580px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card {
+    margin-top: 0px;
+    margin-left: -40px;
+    padding-bottom: 0px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent h3 {
+    margin-bottom: -60px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent p {
+    padding: 0 90px 20px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+    width: 411px;
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 579px) and (min-width: 428px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+    width: 100%;
+    height: 100%;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card {
+    margin-top: 0px;
+    margin-left: -66px;
+    padding-bottom: 0px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+    width: 96%;
+    padding-top: 0px;
+    padding-bottom: 137px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent h3 {
+    margin-bottom: -60px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent p {
+    padding: 0 12.2% 20px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+    width: 96%;
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 427px) and (min-width: 0px) {
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent {
+    width: 100%;
+    height: 100%;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card {
+    margin-top: 0px;
+    margin-left: -82px;
+    padding-bottom: 0px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .ibm-card .ibm-card__content {
+    width: 250px;
+    padding-left: 10px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent {
+    width: 96%;
+    padding-top: 0px;
+    padding-bottom: 137px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent h3 {
+    margin-bottom: -60px;
+    width: 50%;
+    margin-left: -10px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerContent p {
+    padding: 0 12.2% 20px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .fadeContent .usecaseInnerTitle {
+    width: 96%;
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .mainContent #useCases .ibm-col-6-2 {
+    width: 430px;
+    margin: 0px 30px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content h3 {
+    width: 280px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content p {
+    padding: 0px 43px;
+    min-height: 120px;
+  }
+}
+@media only screen and (max-width: 1479px) and (min-width: 1240px) {
+  .mainContent #useCases .ibm-col-6-2 {
+    width: 350px;
+    margin: 0 30px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper div:last-child div .ibm-card .ibm-card__content p {
+    padding: 0px 5px 15px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content h3,
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content p {
+    margin-left: -5px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content p {
+    padding: 0px 14px 15px;
+    min-height: 104px;
+  }
+}
+@media only screen and (max-width: 1239px) and (min-width: 1000px) {
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content h3 {
+    min-height: 90px !important;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper .ibm-card__content p {
+    min-height: 103px;
+  }
+  .mainContent #useCases .usecasesBlocksWrapper div:first-child .ibm-card .ibm-card__content h3 {
+    width: 200px;
+    margin-left: 12px;
+  }
+  .mainContent #useCases div:last-child div .ibm-card .ibm-card__content p {
+    width: 265px;
+    margin-left: -20px;
+  }
+  .mainContent #useCases .ibm-col-6-2 {
+    width: 306px;
+    margin: 0 12px;
+  }
+}
+@media only screen and (max-width: 999px) and (min-width: 760px) {
+  .mainContent #useCases .ibm-card__content {
+    text-align: center;
+  }
+  .mainContent #useCases .ibm-card__content h3 {
+    min-height: inherit;
+  }
+  .mainContent #useCases .ibm-card__content p {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.mainContent #bcDemo {
+  padding: 0px !important;
+}
+.mainContent #bcDemo .demoSubtitle {
+  font-family: "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
+  font-size: 16px;
+}
+.mainContent #bcDemo .demoParagraph {
+  font-size: 15px;
+  line-height: 20px;
+}
+.mainContent #bcDemo .demoIntro {
+  background-color: #1D3649;
+  padding-top: 50px;
+  height: 600px;
+}
+.mainContent #bcDemo .demoIntro p {
+  color: #FFFFFF;
+}
+.mainContent #bcDemo .demoIntro .demoInfo {
+  margin: 0px;
+}
+.mainContent #bcDemo .demoIntro .demoInfo .demoParagraph {
+  padding-right: 20px;
+}
+@media only screen and (max-width: 999px) and (min-width: 580px) {
+  .mainContent #bcDemo .demoIntro .demoInfo .demoParagraph {
+    padding-right: 70px;
+  }
+}
+.mainContent #bcDemo .demoIntro .demoBtn {
+  margin: 0px;
+}
+.mainContent #bcDemo .demoIntro .startdemoImg {
+  background: url('../image/img-demo-overview.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 390px;
+  background-color: #1D3649;
+  margin: 3.5% 0px 0px -10px;
+}
+@media only screen and (max-width: 999px) and (min-width: 0px) {
+  .mainContent #bcDemo .demoIntro .startdemoImg {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 0px) {
+  .mainContent #bcDemo .demoIntro .startdemoImg {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 0px) {
+  .mainContent #bcDemo .demoIntro .startdemoImg {
+    height: 250px;
+  }
+}
+.mainContent #bcDemo .demoIntro .startBtn {
+  float: right;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 579px) and (min-width: 0) {
+  .mainContent #bcDemo .demoIntro .startBtn {
+    float: left;
+    margin-top: 10px;
+    margin-left: 45px;
+  }
+}
+@media only screen and (max-width: 759px) and (min-width: 580px) {
+  .mainContent #bcDemo .demoIntro .ibm-col-6-5 {
+    width: 390px;
+  }
+  .mainContent #bcDemo .demoIntro .ibm-col-6-1 {
+    width: 110px;
+  }
+}
+.mainContent #signupProgram {
+  background-color: #F8F8F8;
+}
+.mainContent #signupProgram .signupFooter {
+  float: right;
+  margin-top: 8px;
+}
+@media only screen and (max-width: 579px) {
+  .mainContent #signupProgram .signupFooter {
+    float: left;
+    margin-top: -5px;
+    margin-bottom: 30px;
+  }
+}
+.mainContent .tradeLane .pathContainer .animatedDiv .temperature {
+  color: #FFF;
+  bottom: 13px;
+  position: absolute;
+  visibility: visible;
+}
+.mainContent .tradeLane .pathContainer .animatedDiv .temperature.hidden {
+  visibility: hidden;
+}
+.mainContent .tradeLane .pathContainer .animatedDiv .temperature.ok {
+  color: #8CD211 !important;
+}
+.mainContent .tradeLane .pathContainer .animatedDiv .temperature.alert {
+  color: #FF5050 !important;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv .temperature {
+  left: calc(50% - 46px);
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.empty-ship {
+  background-image: url('../image/empty-ship.svg');
+  top: -15px;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.empty-ship.packageTransfered {
+  animation: transferFromShip 1s forwards;
+  animation-timing-function: linear;
+  -webkit-animation: transferFromShip 1s forwards;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.empty-ship.animationEnd {
+  margin-left: auto;
+  margin-right: 5px;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.full-ship {
+  background-image: url('../image/full-ship.svg');
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.graphic-ship {
+  background-image: url('../image/full-ship-left-graphics-titles-barless.png');
+  width: 270px;
+  height: 168px;
+  top: -119px;
+  left: -33px;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.graphic-ship.animationEnd {
+  margin-left: -34px;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.graphic-ship .temperature {
+  bottom: 51px;
+  left: 33px;
+}
+.mainContent .tradeLane .pathContainer .animation1.animatedDiv.active.full-ship .temperature {
+  bottom: 42px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv .temperature {
+  left: calc(50% - 33px);
+  bottom: 46px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.empty-truck {
+  background-image: url('../image/empty-truck.svg');
+  top: 7px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.full-truck {
+  background-image: url('../image/full-truck.png');
+  top: 2px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.full-truck.packageTransfered {
+  animation: transferToTruck 1s forwards;
+  animation-timing-function: linear;
+  -webkit-animation: transferToTruck 1s forwards;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.graphic-truck-left {
+  background-image: url('../image/full-truck-left-graphics-titles-barless.png');
+  width: 290px;
+  height: 175px;
+  margin-top: -132px;
+  margin-left: -41px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.graphic-truck-left .temperature {
+  left: 44px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.graphic-truck {
+  background-image: url('../image/full-truck-right-graphics-titles-barless.png');
+  width: 270px;
+  height: 168px;
+  top: -120px;
+  left: -33px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.graphic-truck.animationEnd {
+  margin-left: -174px;
+  top: -123px;
+  height: 180px;
+}
+.mainContent .tradeLane .pathContainer .animation2.animatedDiv.graphic-truck .temperature {
+  bottom: 62px;
+  left: auto;
+  right: -43px;
+}
+.mainContent .tradeLane .divZoom.zoomed .zoomImageDiv:before {
+  content: url('../image/ship-demo-iot-icons.svg');
+}
+.mainContent .norecordmessage {
+  color: #9B9B9B !important;
+  font-size: 13px !important;
+}
+.mainContent .norecordmessage:before {
+  content: url('../image/info.svg');
+  margin: 10px;
+}
+.mainContent .collapsePanel .collapseHeader .collapseButton:before {
+  content: url('../image/chevron_white.svg');
+  position: absolute;
+  top: 18px;
+  left: 45px;
+}
+.mainContent .collapseHeader.normalHeight .expandPanel {
+  background-image: url('../image/arrow-2px-increase.svg');
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #5596E6;
+  width: 19px;
+  height: 19px;
+  margin-top: -3px;
+  right: 50px;
+}
+.mainContent .collapseHeader.maximized .expandPanel {
+  background-image: url('../image/arrow-2px-decrease.svg');
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #5596E6;
+  width: 21px;
+  height: 21px;
+  margin-top: -3px;
+  right: 50px;
+}
+.mainContent .collapsePanel .collapseHeader:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  top: -7px;
+  background-image: url('../image/shadow.png');
+  background-repeat: repeat-x;
+}
+.mainContent .collapsePanel .collapseHeader.active.maximized:before {
+  opacity: 0;
+}
+.mainContent #transactionsContainer {
+  border: 1px solid #E3E3E3;
+}
+.historycontainerTooltip p,
+.historycontainerTooltip span {
+  font-size: 14px;
+}
+.historycontainerTooltip .expandIcon {
+  padding-right: 25px;
+}
+.historycontainerTooltip .expandIcon:after {
+  content: url('../image/arrow-2px-increase-black.svg');
+  margin-top: 4px;
+  position: absolute;
+}
+.rotateDeviceImg {
+  background: url('../image/img-rotate-device.svg');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+.rotateDeviceImg {
+  background-image: url('../image/device-resolution.svg');
+}
+@keyframes transferFromShip {
+  0% {
+    background-image: url('../image/full-ship.svg');
+  }
+  100% {
+    background-image: url('../image/empty-ship.svg');
+  }
+}
+@keyframes transferToTruck {
+  0% {
+    background-image: url('../image/empty-truck.png');
+    top: 7px;
+  }
+  100% {
+    background-image: url('../image/full-truck.png');
+    top: 2px;
+  }
+}
