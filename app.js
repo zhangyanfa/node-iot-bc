@@ -231,7 +231,7 @@ app.get("/api/assets",function(req, res) {
 });
 
 var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
-http.listen(port, '0.0.0.0', function() {
+http.listen(port, function() {
     console.log('Server running on port: %d', port);
 });
 

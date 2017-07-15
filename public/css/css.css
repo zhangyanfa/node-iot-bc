@@ -401,12 +401,14 @@
 
 #businessContract .contractTerms h4 {
     padding-top: 0px;
+    font-size: 22px;
 }
 
 #businessContract .contractTerms h4,
 #businessContract .contractTerms p {
     color: #222222;
     line-height: 22px;
+    font-size: 20px;
 }
 
 #businessContract .contractTerms .buttonDiv {

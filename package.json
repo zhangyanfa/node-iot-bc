@@ -1,7 +1,7 @@
 {
   "name": "node-iot-bc",
   "version": "1.0.0",
-  "description": "Badminton Challenge",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
