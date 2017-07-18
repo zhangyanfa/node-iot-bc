@@ -230,7 +230,7 @@ app.get("/api/assets",function(req, res) {
     res.send(paylaod);
 });
 
-var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
+var port = process.env.HOST_PORT || process.env.VCAP_APP_PORT || 3000;
 http.listen(port, function() {
     console.log('Server running on port: %d', port);
 });
