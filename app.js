@@ -122,14 +122,20 @@ app.use(function(req, res, next) {
 app.get("/api/startMonitor", function(req, res) {
     console.log("====start monitor====");
     tempJSON = { "d": { "status": "connnected", "temp": 26, "max_temp": 26 } };
-    appClient.publishDeviceCommand("BC-NodeMcu", "temperature-monitor", "control", "string", "{'monitor':'1'}");
-    res.send("ok");
+    //appClient.publishDeviceCommand("BC-NodeMcu", "temperature-monitor", "control", "string", "{'monitor':'1'}");
+    request('http://172.20.27.51/monitor', function(err, response, data) {
+        console.log('geted', data)
+        res.send("ok");
+    })
+    
 });
 
 app.get("/api/stopMonitor", function(req, res) {
     console.log("====stop monitor====");
-    appClient.publishDeviceCommand("BC-NodeMcu", "temperature-monitor", "control", "string", "{'monitor':'0', 'malfunction':'0'}");
-
+    //appClient.publishDeviceCommand("BC-NodeMcu", "temperature-monitor", "control", "string", "{'monitor':'0', 'malfunction':'0'}");
+    request('http://172.20.27.51/stopmonitor', function(err, response, data) {
+        console.log('geted', data)
+    })
     assetAry = new Object();
     res.send("ok");
 });
@@ -137,14 +143,21 @@ app.get("/api/stopMonitor", function(req, res) {
 app.get("/api/temp", function(req, res) {
     //console.log("====/api/temp====");
     //tempJSON = { "d": { "status": "connnected", "temp": 29.31, "max_temp": 31.37 } };
-    res.json(tempJSON);
+    request('http://172.20.27.51/temp', function(err, response, data) {
+        console.log('geted temp：'+ data)
+        res.json(JSON.parse(data));
+    })
 });
 
 app.get("/api/setCoolingSystemMalfunction", function(req, res) {
     console.log("====setCoolingSystemMalfunctionp====");
     //tempJSON = { "d": { "status": "connnected", "temp": 29.31, "max_temp": 31.37 } };
-     appClient.publishDeviceCommand("BC-NodeMcu", "temperature-monitor", "control", "string", "{'malfunction':'1'}");
-    res.json("ok");
+    //appClient.publishDeviceCommand("BC-NodeMcu", "temperature-monitor", "control", "string", "{'malfunction':'1'}");
+    request('http://172.20.27.51/malfunction/1', function(err, response, data) {
+        console.log('geted', data)
+        res.json("ok");
+    })
+    
 });
 
 app.get("/api/bc/assets", function(req, res) {
