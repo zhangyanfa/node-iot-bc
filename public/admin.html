@@ -11,9 +11,12 @@
     <script src="js/socket.io.js"></script>
     <script type="text/javascript">
         
-        
         function doAlert() {
             $.get("/api/setCoolingSystemMalfunction");
+        }
+
+        function clseAlert() {
+            $.get("/api/stopMonitor");
         }
         
         function doAction(btn) {
@@ -37,6 +40,7 @@
         </tr>
         <tr>
             <td><button onclick="doAlert()">触发报警</button></td>
+            <td><button onclick="closeAlert()">关闭报警</button></td>
         </tr>
         <tr>
             <td><button onclick="doAction('history')">查看历史</button></td>
