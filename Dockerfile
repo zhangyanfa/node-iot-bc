@@ -1,6 +1,7 @@
 FROM node:6.11.1
 
 ENV HTTP_PORT 3000
+ENV VIDEO_PATH /mnt/iot-bc/
 
 COPY . /app  
 WORKDIR /app

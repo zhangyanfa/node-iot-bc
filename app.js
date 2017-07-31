@@ -245,9 +245,7 @@ app.get("/api/assets",function(req, res) {
 
 var fs = require("fs");
 app.get('/video', function(req, res) {
-  //const path = 'assets/sample.mp4'
-  var path = '/Users/yanfaz/Downloads/demo.mp4';
-  //var path = "/mnt/iot-bc/demo.mp4";
+  var path = process.env.VIDEO_PATH || '/Users/yanfaz/Downloads/demo.mp4';
   const stat = fs.statSync(path)
   const fileSize = stat.size
   const range = req.headers.range
