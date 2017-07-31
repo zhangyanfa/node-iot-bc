@@ -245,6 +245,7 @@ app.get("/api/assets",function(req, res) {
 
 var fs = require("fs");
 app.get('/video', function(req, res) {
+  console.log("====process.env.VIDEO_PATH===" + process.env.VIDEO_PATH);
   var path = process.env.VIDEO_PATH || '/Users/yanfaz/Downloads/demo.mp4';
   const stat = fs.statSync(path)
   const fileSize = stat.size
@@ -276,6 +277,7 @@ app.get('/video', function(req, res) {
 });
 
 var port = process.env.HOST_PORT || process.env.VCAP_APP_PORT || 3000;
+console.log("====process.env.HOST_PORT===" + process.env.HOST_PORT);
 http.listen(port, function() {
     console.log('Server running on port: %d', port);
 });
