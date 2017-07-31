@@ -276,8 +276,8 @@ app.get('/video', function(req, res) {
   }
 });
 
-var port = process.env.HOST_PORT || process.env.VCAP_APP_PORT || 3000;
-console.log("====process.env.HOST_PORT===" + process.env.HOST_PORT);
+var port = process.env.HTTP_PORT || process.env.VCAP_APP_PORT || 3000;
+console.log("====process.env.HOST_PORT===" + process.env.HTTP_PORT);
 http.listen(port, function() {
     console.log('Server running on port: %d', port);
 });
